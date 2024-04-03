@@ -1,7 +1,600 @@
 <!DOCTYPE html>
 <html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
+
+
+    <head>
+        <!-- Required meta tags for Bootstrap-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <meta property="og:image" content="./images/banner.png">
+        <meta property="og:image:width" content="600"> <!-- Specify the width of the image -->
+        <meta property="og:image:height" content="600"> <!-- Specify the height of the image -->
+        <meta property="og:title" content="Designing (with) AI for Wellbeing">
+        <meta property="og:description" content="In this one-day hybrid CHI '24 workshop, we aim to explore how we can design with AI for wellbeing, promoting meaningful and ethical solutions while mitigating possible negative consequences. ">
+        <meta property='og:url' content='https://designingwithaiforwellbeing.github.io/'/>
+        
+        <script src="https://use.typekit.net/jjq5mcd.js"></script>
+        <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+            <style>
+
+                
+
+                #Banner {
+                    background-color: black;
+                    color: white;
+                    opacity: 1;
+                    height: 200px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: left;
+                    line-height: 2; /* Adjust the line-height as needed */
+                    
+                    font-family: "liberation-sans", sans-serif;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 5vw; /* Default font size */
+                    }
+
+                    @media (min-width: 768px) {
+                        #Banner {
+                            font-size: 5vw; /* Adjust for larger screens */
+                        }
+                    }
+
+                    @media (min-width: 1200px) {
+                        #Banner {
+                            font-size: 5vw; /* Adjust for even larger screens */
+                        }
+                }
+
+
+                .Text{
+                    
+                    color:black;
+                    background-color: white;
+                    margin-bottom: 100px;
+                }
+
+                .Titles{
+                    font-weight: normal;
+                    font-family: "liberation-sans", serif; /*or: "liberation-sans*/
+                    font-style: normal; 
+                    font-size: xx-large;
+                }
+
+
+                #Bottom{
+                    background-color: rgb(236, 234, 234);
+                    opacity: 0.8;
+                    color:rgb(49, 49, 49);
+                    
+                    
+                }
+
+                .Titles-bottom{
+                    font-weight: normal;
+                    font-family: "liberation-sans", serif; /*or: "liberation-sans*/
+                    font-style: normal; 
+                    font-size: x-large;
+                    
+                    
+                }
+
+                .Titles-bottom-sm{
+                    font-weight: normal;
+                    
+                    font-family: "liberation-sans", serif; /*or: "liberation-sans*/
+                    font-style: normal; 
+                    font-size: medium;
+                }
+
+                .Text-bottom{
+                    font-weight: normal;
+                    font-family: "liberation-sans", serif; /*or: "liberation-sans*/
+                    font-style: normal; 
+                    font-size: small;
+                    
+                }
+
+                #icon{
+                    border-color: white;
+                }
+
+                #banner_image{
+                    position: absolute;
+                    background-image: url('./images/banner.png');
+                    height: 700px;
+                    background-size: cover;
+                    background-position: center center;
+                }
+
+                .parallax {
+                    background-attachment: fixed;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+
+                .gradient-overlay {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    bottom: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+                    z-index: 2;
+                }
+
+                #banner_text{
+                    z-index: 3; 
+                    color: white;
+                    font-family: "liberation-sans", sans-serif;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 5vw; /* Default font size */
+                    margin-top: 80px;
+                    opacity: 0.8;
+                }
+
+            </style>
+
+
+            <!-- Bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+          
+
+
+    </head>
+
+    <body>
+
+        <div class="container-fluid h-100">
+
+            <div class="row">
+
+                <div class="col-12" id="Banner">
+                    CHI 2024 WORKSHOP
+                    
+                    
+
+                </div>
+
+                <div class="col-12 bg-image parallax position-relative shadow rounded" id = 'banner_image'>
+                    
+                    <!-- Gradient overlay -->
+                    <div class="gradient-overlay"></div>
+                                    <!-- Gradient overlay -->
+                    
+
+                <!-- Text on top of the image -->
+                <div class="position-absolute top-10 start-50 translate-middle text-center" id='banner_text' >
+                    <h1 class="display-3">Designing (with) AI for Wellbeing</h1>
+                    
+                </div>
+
+
+
+                </div>
+
+                <!--
+                <div class="col-12" id="Banner">
+                    CHI 2024 WORKSHOP
+                    
+                    <br/>Designing (with) AI for wellbeing
+
+                </div>
+                -->
+
+                <div class="col-12">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                        <a class="navbar-brand" href="#"></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div  class="collapse navbar-collapse" id="navbarNavAltMarkup" id="navbarNavAltMarkup">
+                          <div class="navbar-nav">
+                            <a class="nav-item nav-link active" href="#">Home <span class="sr-only"></span></a>
+                            <a class="nav-item nav-link" href="#Participation_call">Call for participation</a>
+                            <a class="nav-item nav-link" href="#Dates">Important dates and submissions</a>
+                            <a class="nav-item nav-link" href="#Attending">Attending and fees</a>
+                            <a class="nav-item nav-link" href="#Workshop_themes">Workshop themes</a>
+                            <!--<a class="nav-item nav-link" href="#Program">Program</a>-->
+                            <a class="nav-item nav-link" href="#Organizers">Organizers</a>
+                          </div>
+                        </div>
+                      </nav>
+                </div>
+
+                <div class="col-12" style="height:100px;">
+
+                </div>
+
+                <!--Starting with the main content from here onwards-->
+                <div class="row">
+
+                        <!--Left gap-->
+                    <div class="col-1 col-sm-1 col-md-3">
+                        <!--Add icon-->
+                        <div class="row">
+                            <div class="col-7"></div>
+                            <div class="col-3">
+                                <img src="./images/paper.jpg" class="img-thumbnail img-fluid" id = 'icon' alt="Paper icon" >
+                            </div>
+                            <div class="col-2"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-10 col-sm-10 col-md-6">
+
+                        <div class="row">
+    
+                            
+    
+                            <div class="col-12 Titles" id="Participation_call">
+                                Call for participation
+                            </div>
+    
+                            <!--Call for participation-->
+                            <div class="col-12 Text">
+                                <p>Designing with data and AI can bring significant value to developing systems and technologies that promote physical and mental wellbeing. 
+                                    However, there are also challenges and risks connected to designing (with) AI for wellbeing, such as the difficulties in ensuring that 
+                                    generated feedback or proposed interventions will be interpreted correctly depending on the user's data literacy, and relevant considering 
+                                    the large interpersonal variations between the personal health data of different individuals. In this one-day hybrid workshop, we aim to 
+                                    explore how we can design with AI for wellbeing, promoting meaningful and ethical solutions while mitigating possible negative consequences. 
+                                    We call for position papers and short empirical, theoretical or methodological papers (up to 2500 words excluding references, single-column ACM Master Article Submission Template, 
+                                    submitted by email to the organizers) addressing challenges and opportunities related to designing (with) AI for wellbeing 
+                                    (see <a href="#Workshop_themes">here</a> potential topics). The submissions will be 
+                                    selected based on their ability to trigger discussion and coverage of diverse topics. While we focus on human wellbeing 
+                                    for maintaining a healthy lifestyle, we also welcome papers about other concepts of wellbeing. </p>
+                                
+                                
+                                
+                                <p>After the workshop, we plan to publish the accepted submissions and the material generated during the workshop on our website. Authors of accepted 
+                                submissions will be invited for publication in a special issue. At least one author of each accepted submission must attend 
+                                the workshop. All participants must register for both the workshop and at least one day of the conference.</p>
+                            </div>
+                        </div>
+    
+                    </div>
+
+
+                    <div class="col-1 col-sm-1 col-md-3"></div>
+                </div>
+
+
+                <div class="row">
+
+                    <!--Left gap-->
+                <div class="col-1 col-sm-1 col-md-3">
+                    <!--Add icon-->
+                    <div class="row">
+                        <div class="col-7"></div>
+                        <div class="col-3">
+                            <img src="./images/diary.jpg" class="img-thumbnail img-fluid" id = 'icon' alt="Diary icon" >
+                        </div>
+                        <div class="col-2"></div>
+                    </div>
+                </div>
+
+
+                <div class="col-10 col-sm-10 col-md-6">
+
+                    <div class="row">
+
+
+                        <div class="col-12 Titles" id="Dates">
+                            Important dates and submissions
+                        </div>
+    
+                            
+                        <div class="col-12 Text">
+
+                           
+    
+                            <p>
+                                <b>Deadline for submitting your workshop paper</b>: <s>29 February 2024</s> 14 March 2024 (AoE)
+                            </p>
+                            <p>
+                                You can submit your paper to <a href="#Organizers">Dimitra and Loes</a> by email. The submission does not need to be anonymized. Each submission will be reviewed by the organisers and the selection will be made based on their relevance, quality, and ability to trigger discussion and coverage of diverse topics.
+                            </p>
+
+                            <p>
+                                <b>Notification date</b>: <s>15 March 2024</s> 30 March 2024
+                            </p>
+                            <p>
+                                <b>Format</b>: single-column <a href="https://www.acm.org/publications/proceedings-template">ACM Master Article Submission Template</a>, up to 2500 words excluding references.
+                            </p>
+    
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="col-1 col-sm-1 col-md-3"></div>
+            </div>
+
+
+
+            <div class="row">
+
+                <!--Left gap-->
+            <div class="col-1 col-sm-1 col-md-3">
+                <!--Add icon-->
+                <div class="row">
+                    <div class="col-7"></div>
+                    <div class="col-3">
+                        <img src="./images/diary.jpg" class="img-thumbnail img-fluid" id = 'icon' alt="Diary icon" >
+                    </div>
+                    <div class="col-2"></div>
+                </div>
+            </div>
+
+
+            <div class="col-10 col-sm-10 col-md-6">
+
+                <div class="row">
+
+
+                    <div class="col-12 Titles" id="Attending">
+                        Attending and fees
+                    </div>
+
+                        
+                    <div class="col-12 Text">
+
+                        <p>
+                            <b>Location and format</b>: The workshop is a part of the <a href="https://chi2024.acm.org/">CHI '24 conference</a>, which will take place at the Hawai’i Convention Centre. 
+                            The workshop will have a hybrid format, so we welcome on-site and remote participants. 
+                        </p>
+
+                        <p>
+                            <b>Date</b>: 12 May (full-day).
+                        </p>
+
+                        <p>
+                            <b>Registration</b>: Apart from submitting a paper, participation in the workshop requires
+                            registering for both the workshop and at least one day of the conference.  The early registration deadline is April 1st 2024 EOD AOE (Anywhere On Earth). You can find more information 
+                            <a href="https://chi2024.acm.org/2024/02/01/chi-2024-registration-is-now-open/">here</a>.
+                            
+                        </p>
+                        
+
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="col-1 col-sm-1 col-md-3"></div>
+        </div>
+
+                
+
+
+            <div class="row">
+
+                <!--Left gap-->
+            <div class="col-1 col-sm-1 col-md-3">
+                <!-- Add icon -->
+                <div class="row">
+                    <div class="col-md-7 d-none d-md-block"></div>
+                    <div class="col-10 col-sm-10 col-md-3">
+                        <img src="./images/heart_w2.jpg" class="img-thumbnail img-fluid" id="icon" alt="Heart icon">
+                    </div>
+                    <div class="col-2"></div>
+                </div>
+            </div>
+
+
+            <div class="col-10 col-sm-10 col-md-6">
+
+                <div class="row">
+
+
+                    <div class="col-12 Titles" id="Workshop_themes">
+                        Workshop themes
+                    </div>
+
+                    <div class="col-12 Text">
+                        In this workshop we will map opportunities and challenges related to designing (with) AI for wellbeing
+                        and discuss possible approaches to mitigating negative consequences. Our aim is to create a conceptual framework that can guide HCI researchers and practitioners 
+                        in designing (with) AI for wellbeing. The workshop will focus on human wellbeing, from the perspective of designing applications and systems related to promoting, 
+                        achieving and maintaining a healthy lifestyle at an individual level, considering psychological, physical and social dimensions.
+                        However, we also welcome papers that critically connect this theme with research on designing AI systems in healthcare, 
+                        or other concepts of wellbeing beyond the individual, such as wellbeing in the context of human-nature interaction.
+                    </div>
+
+                    <div class="col-12 Text">
+                        We call for position papers and short empirical, theoretical or methodological papers inspired by (but not limited to) the identified challenges and opportunities related to designing (with) AI for wellbeing:
+                        <ul>
+                            <li><em>Challenges Related to Designing (with) data and AI:</em>
+                                <ol>
+                                    <li>How can we find designerly ways to avoid privacy risks in personal health (e.g., activity, fitness, sleep, stress..) data collection, increase transparency regarding the purpose of data use, and increase the agency of the users in negotiating (changes in) the use of their personal data?</li>
+                                    <li>How can we create systems that enable smooth transitions between individual and collaborative personal health data experiences?</li>
+                                    <li>How can we promote the capacity of designers to envision AI failures in interactions with personal health data? How can we create designerly, personalized solutions for mitigating such failures?</li>
+                                </ol>
+                            </li>
+                            <li><em>Open Problems for AI in Designing for Wellbeing:</em>
+                                <ol>
+                                    <li>How can we design AI-enabled systems that consider differences in personal health data and AI literacy among individuals to avoid misinterpretations?</li>
+                                    <li>How can we control the appropriateness of generative AI outputs in applications where there is no expert to act as an intermediary for quality checks?</li>
+                                    <li>How can we create positive data collection in-the-wild experiences that ensure long-term adherence for the acquisition of data sufficient in volume and generalizability for algorithm training, or design creative alternative solutions?</li>
+                                    <li>How can we ensure that the AI output is relevant considering the large interpersonal variations in personal health data and other relevant qualities?</li>
+                                </ol>
+                            </li>
+                            <li><em>Opportunities for AI in Designing for Wellbeing:</em>
+                                <ol>
+                                    <li>How can we enhance user experience in AI-enabled systems for promoting wellbeing by incorporating the ability of continuous improvement, during product development but also after implementation?</li>
+                                    <li>How can we bring short- and long-term positive changes in wellbeing through AI-enabled systems?</li>
+                                </ol>
+                            </li>
+                        </ul>
+                        
+                        <p>We also welcome reflections, argumentations, and case studies related to (designing with) specific types of AI for wellbeing, or broader ethical issues related to designing with AI for wellbeing. For example:</p>
+                        
+                        <ol>
+                            <li>How might generative AI be best used to improve wellbeing across existing products and platforms?</li>
+                            <li>What new use cases and interactions promoting wellbeing could be enabled by embodied AI agents (such as social robots)?</li>
+                            <li>What are the concerns or potential risks with implementing methods such as reinforcement learning to increase the personalization of feedback related to wellbeing, considering that such methods inherently include a starting period of high algorithm uncertainty?</li>
+                            <li>How do we ensure sustainable diversity, inclusivity, and adaptability in AI-enabled designs?</li>
+                            <li>How do we manage issues of responsibility in AI failures affecting wellbeing?</li>
+                        </ol>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="col-1 col-sm-1 col-md-3"></div>
+        </div>
+                        <!--
+                        <div class="col-12 Titles" id="Program">
+                            Program (To be updated)
+                        </div>
+                        
+                        <div class="col-12 Text">
+                            
+                            The workshop is organized as a one full-day workshop with two parts. The morning session will
+                            be focused on discussing and mapping methodological approaches, reflections and argumentations related to designing
+                            with AI for wellbeing based on case studies. In the afternoon session, we will use design fiction activities using
+                            ideation material (e.g. inspired by tools for envisioning AI capabilities) to collaboratively envision positive and
+                            negative scenarios utilizing AI-enabled systems for promoting wellbeing. Finally, we will create a conceptual framework
+                            synthesizing the discussed approaches and generated ideas. The preliminary workshop schedule is as follows:
+                            <ul>
+                                <li>Morning session:
+                                    <ul>
+                                        <li>9:00 – 9:15: Opening of the workshop (welcome and introduction to workshop goals)</li>
+                                        <li>9:15 – 9:45: Keynote talk</li>
+                                        <li>9:45 – 10:00: Ice Breaker</li>
+                                        <li>10:00 – 10:15: Coffee break</li>
+                                        <li>10:15 – 11:15: Small group activity (3-4 participants): Discuss position papers and emerging approaches in connection to the identified challenges and opportunities</li>
+                                        <li>11:15 – 12:00: 2-minute group presentations, general discussion, and synthesis</li>
+                                    </ul>
+                                </li>
+                                <li>Lunch</li>
+                                <li>Afternoon session:
+                                    <ul>
+                                        <li>13:00 – 13:30: Keynote talk (time to be confirmed depending on the availability of the speaker)</li>
+                                        <li>13:30 – 14:15: Designing (with) AI for Wellbeing: group activity using Design Fiction (3-4 participants) to develop application concepts and emerging opportunities in this new domain</li>
+                                        <li>14:15 – 14:45: "Devil’s Advocate": exercise to explore (potential) down- or dark sides of these applications (e.g., dystopian future exercise)</li>
+                                        <li>14:45 – 15:00: Coffee break</li>
+                                        <li>15:00 – 15:45: Presentations of the created concepts and emerging opportunities and challenges: e.g., 5 do's and 5 don'ts with examples.</li>
+                                        <li>15:45 – 16:45: Creation of conceptual framework and discussion of future directions</li>
+                                        <li>16:45 – 17:00: Wrap-up</li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                        </div>
+                        -->
+
+                <!--Organizers-->
+                <div class="col-12" id="Bottom">
+
+                    <div class="row">
+                        <div class="col-12" style="height: 100px;"></div>
+
+                        <div class="col-1 col-sm-1 col-md-3">
+
+                        </div>
+                        
+                        <div class="col-10 col-sm-10 col-md-6 Titles-bottom"  id="Organizers">
+                            Organizers
+
+                        <div class="row">
+                            
+                            <p class="Titles-bottom-sm">
+                                Dimitra Dritsa (Eindhoven University of Technology) - d.dritsa@tue.nl
+                            </p>
+
+                            <p class="Text-bottom">
+                                Dimitra Dritsa is a Postdoctoral Researcher at Eindhoven University of Technology, Department of Industrial Design. She obtained her PhD at University of Technology Sydney, where she investigated how physiological data from wearables can be used to understand stress and promote wellbeing at the individual and urban scale. Motivated by recent advances in AI and the development of sensors that allow the longitudinal collection of behavioural data in the wild, she currently explores how such data and AI outputs can become design material, considering challenges such as making sense of human behaviour through data and visualizations.
+                            </p>
+
+                            <p class="Titles-bottom-sm">
+                                Loes van Renswouw (Eindhoven University of Technology) - l.m.v.renswouw@tue.nl
+                            </p>
+                            <p class="Text-bottom">
+                                Loes van Renswouw is a Postdoctoral Researcher in the Industrial Design Department at Eindhoven University of Technology. With a background in architecture, her research focuses on enhancing the influential power of healthy active environments by integrating smart and interactive applications. She explored different perspectives on large datasets as well as persuasive technologies and how these can inform the design of intelligent solutions. Researching and designing with data, she maintains a user-centered approach towards these so-called interActive Urban Environments. 
+                            </p>
+
+                            <p class="Titles-bottom-sm">
+                                Sara Colombo (Delft University of Technology) </p>
+                            <p class="Text-bottom">
+                                Sara Colombo is an Assistant Professor of Designing Empowering AI in the Faculty of Industrial Design Engineering, Delft University of Technology. Her research explores how design can contribute to the creation of empowering AI applications, by adopting ethical, responsible, and human-centered approaches, especially in the fields of healthcare and digital wellbeing. She regularly collaborates with industry and institutions to apply and develop her research in societal contexts. She previously worked at Eindhoven University of Technology, Massachusetts Institute of Technology, Northeastern University, and Politecnico di Milano.
+                            </p>
+                            <p class="Titles-bottom-sm">
+                                Kaisa Väänänen (Tampere University)
+                            </p>
+                            <p class="Text-bottom">
+                                Kaisa Väänänen is a Full Professor of Human-Technology Interaction in Tampere University, Finland, where she leads the research group of Human-Centered Technology in the unit of Computing Sciences. She has over 25 years of research experience both in industry and academia. In her research, she is focusing on user experience of Human-Centered AI and sustainable development supported by interactive technologies.
+                            </p>
+
+                            <p class="Titles-bottom-sm">
+                                Sander Bogers (Philips)
+                            </p>
+                            <p class="Text-bottom">
+                                Sander Bogers is a Design Director at Philips Experience Design. He leads a design team responsible for the development and implementation of enterprise-level informatics, data, and AI. Working in healthcare, he is passionate about how design skills need to evolve to design more complex and intelligent solutions, that can radically transform patient and staff experiences. For his PhD at Eindhoven University of Technology, he developed data-enabled design as a way to use data more creatively when designing for smart and intelligent systems, which served as the foundation for the team he leads now. 
+                            </p>
+
+                            <p class="Titles-bottom-sm">
+                                Arian Martinez (Microsoft)
+                            </p>
+                            <p class="Text-bottom">
+                                Arian Martinez is a Principal Product Designer in the Data Cloud Studio at Microsoft. Previously, he led the Human-AI Interaction team at Oracle. His work focuses on researching how to create ethical, lawful and human-centric AI implementations; defining principles, guidelines and tools to achieve that; and designing AI-infused products and reusable components.
+                            </p>
+
+                            <p class="Titles-bottom-sm">
+                                Jess Holbrook (Meta)
+                            </p>
+                            <p class="Text-bottom">
+                                Jess Holbrook is Director and Principal Researcher of Generative AI UX research at Meta. Previously, he was Director and Head of UX Research for Responsible AI at Meta. Before that, he was a founder and lead of Google’s People + AI Research group (PAIR) focused on making AI partnerships productive, enjoyable, and fair. Prior to joining Google, he was a UX Researcher at Amazon and Microsoft. He received his Ph.D in Psychology from the University of Oregon and a B.S. in Psychology from the University of Washington.
+                            </p>
+
+                            <p class="Titles-bottom-sm">
+                                Aarnout Brombacher (Eindhoven University of Technology, Jheronymus Academy of Data Science)
+                            </p>
+                            <p class="Text-bottom">
+                                Aarnout Brombacher is a Full Professor at Eindhoven University of Technology and he currently is Professor in ‘Design theory and information flow analysis’ at the Jheronymus Academy of Data Science; a joint research institute of Eindhoven University of Technology and Tilburg University. In his research he focuses on the use of dynamic, often longitudinal, field data in the design and utilization process of individualized and adaptive systems for healthcare and sports. 
+                            </p>
+
+                        
+               
+
+                        </div> 
+
+                        </div>
+
+                        <div class="col-sm-1 col-md-3">
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+
+
+
+            </div>
+            
+        <!--jquery - required for bootstrap-->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-GLhlTQ8iK1u9ZZl798+H9Y0uwj/+Tn6ZLlE3Y/AZIwojtqIbeb4Ff4TEz92dtpX4" crossorigin="anonymous"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+          
+        </div>
+
+
+    </body>
+
+
 </html>
